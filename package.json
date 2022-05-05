@@ -5,7 +5,7 @@
   "engines": {
     "node": "16.x"
   },
-  "main": "npm start",
+  "main": "npm start:react",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -30,7 +30,8 @@
   },
   "proxy": "https://axolt.herokuapp.com/",
   "scripts": {
-    "start": "react-scripts start && node run node/index.js",
+    "start": "node node/index.js",
+    "start:react": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
